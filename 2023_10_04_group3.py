@@ -6,13 +6,13 @@ from typing import Optional
 # Create a function that takes in a current mood and 
 # return a sentence in the following format: "Today, I am feeling {mood}".
 # However, if no argument is passed, return "Today, I am feeling neutral".
-def mood_today_1(mood: str | None = "neutral"):
+def mood_today_1(mood: str | None = "neutral") -> str:
     return f"Today, I am feeling {mood}"
 
-def mood_today_2(mood: Optional[str] = "neutral"):
+def mood_today_2(mood: Optional[str] = "neutral") -> str:
     return f"Today, I am feeling {mood}"
 
-def mood_today_3(mood = "neutral"):
+def mood_today_3(mood = "neutral") -> str:
     return "Today, I am feeling {}".format(mood)
 
 
